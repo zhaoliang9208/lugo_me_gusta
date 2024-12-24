@@ -1,6 +1,79 @@
-.img-fluid  {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+body {
+    background-color: rgba(0, 0, 0, 0.929);
 }
 
+#logo {
+    position: absolute;
+    width: 50px; height: 50px;
+    top: 25px;
+    left: 30px;
+    cursor: pointer;
+}
+
+.link_logo {
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    top: 30px;
+    left: 90px;
+    font-size: 30px;
+}
+
+#buscador {
+    position: absolute;
+    top: 30px;
+    left: 600px;
+    width: 800px;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    background-color: rgb(34, 39, 42);
+}
+
+.switch {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff8c00;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
